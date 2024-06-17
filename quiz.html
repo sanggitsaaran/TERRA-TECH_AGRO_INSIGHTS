@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terratech Agro Insights Quiz !</title>
+    <link rel="stylesheet" href="quiz.css">
+    <link rel="icon" href="images/Designer.png">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Designer.png" alt="Tamil Nadu Farm Heritage Logo">
+        </div>
+        <div class="main-heading">
+            Test your Agriculture Knowledge
+        </div>
+        <div class="back-button">
+            <button type="button"><a href="home.html">Home</a></button> 
+        </div>
+    </header>
+
+    <div id="content-wrapper">
+        <section class="quiz">
+            <div class="container">
+                <h2>Quiz</h2>
+                <div class="question">
+                    <p>1. Which crop is known as the "King of Tamil Nadu's Agriculture"?</p>
+                    <ul class="options">
+                        <li><input type="radio" name="q1" value="a"> Rice</li>
+                        <li><input type="radio" name="q1" value="b"> Sugarcane</li>
+                        <li><input type="radio" name="q1" value="c"> Banana</li>
+                        <li><input type="radio" name="q1" value="d"> Cotton</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <p>2. What is the main export spice from Tamil Nadu?</p>
+                    <ul class="options">
+                        <li><input type="radio" name="q2" value="a"> Cardamom</li>
+                        <li><input type="radio" name="q2" value="b"> Turmeric</li>
+                        <li><input type="radio" name="q2" value="c"> Pepper</li>
+                        <li><input type="radio" name="q2" value="d"> Cinnamon</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <p>3. Which region in Tamil Nadu is famous for its high-quality silk production?</p>
+                    <ul class="options">
+                        <li><input type="radio" name="q3" value="a"> Madurai</li>
+                        <li><input type="radio" name="q3" value="b"> Salem</li>
+                        <li><input type="radio" name="q3" value="c"> Kanchipuram</li>
+                        <li><input type="radio" name="q3" value="d"> Coimbatore</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <p>4. What is the main fruit crop grown in the Nilgiri Hills of Tamil Nadu?</p>
+                    <ul class="options">
+                        <li><input type="radio" name="q4" value="a"> Mango</li>
+                        <li><input type="radio" name="q4" value="b"> Orange</li>
+                        <li><input type="radio" name="q4" value="c"> Apple</li>
+                        <li><input type="radio" name="q4" value="d"> Pineapple</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <p>5. Which district in Tamil Nadu is known for its extensive cultivation of flowers, especially roses?</p>
+                    <ul class="options">
+                        <li><input type="radio" name="q5" value="a"> Theni</li>
+                        <li><input type="radio" name="q5" value="b"> Dindigul</li>
+                        <li><input type="radio" name="q5" value="c"> Erode</li>
+                        <li><input type="radio" name="q5" value="d"> Krishnagiri</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <p>6. Which variety of rice is specifically known to be cultivated in Tamil Nadu?</p>
+                    <ul class="options">
+                        <li><input type="radio" name="q6" value="a"> Basmati</li>
+                        <li><input type="radio" name="q6" value="b"> Sona Masoori</li>
+                        <li><input type="radio" name="q6" value="c"> Ponni</li>
+                        <li><input type="radio" name="q6" value="d"> Kolam</li>
+                    </ul>
+                </div>
+                
+                <div class="question">
+                    <p>7. Which agricultural university is the premier institution for agricultural education in Tamil Nadu?</p>
+                    <ul class="options">
+                        <li><input type="radio" name="q7" value="a"> Tamil Nadu Agricultural University</li>
+                        <li><input type="radio" name="q7" value="b"> Annamalai University</li>
+                        <li><input type="radio" name="q7" value="c"> Madras University</li>
+                        <li><input type="radio" name="q7" value="d"> Bharathiar University</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <p>8. Which crop is mainly grown in the Cauvery Delta region?</p>
+                    <ul class="options">
+                        <li><input type="radio" name="q8" value="a"> Wheat</li>
+                        <li><input type="radio" name="q8" value="b"> Rice</li>
+                        <li><input type="radio" name="q8" value="c"> Maize</li>
+                        <li><input type="radio" name="q8" value="d"> Barley</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <p>9. What is the main occupation of the people living in the rural areas of Tamil Nadu?</p>
+                    <ul class="options">
+                        <li><input type="radio" name="q9" value="a"> Fishing</li>
+                        <li><input type="radio" name="q9" value="b"> Mining</li>
+                        <li><input type="radio" name="q9" value="c"> Agriculture</li>
+                        <li><input type="radio" name="q9" value="d"> Textile manufacturing</li>
+                    </ul>
+                </div>
+
+                <div class="question">
+                    <p>10. Which agricultural product is extensively grown in the hills of Tamil Nadu and is a major source of income for farmers there?</p>
+                    <ul class="options">
+                        <li><input type="radio" name="q10" value="a"> Coffee</li>
+                        <li><input type="radio" name="q10" value="b"> Tea</li>
+                        <li><input type="radio" name="q10" value="c"> Rubber</li>
+                        <li><input type="radio" name="q10" value="d"> Cocoa</li>
+                    </ul>
+                </div>
+
+                <button class="submit-btn" onclick="submitQuiz()">Submit</button>
+            </div>
+        </section>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div id="popup-message"></div>
+            <div class="result-buttons">
+                <button onclick="window.location.reload()">Reattempt</button>
+                <button onclick="window.location.href='home.html'">Back to Home</button>
+            </div>
+        </div>
+    </div>
+    <script src="quiz.js"></script>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-content">
+            <div class="footer-section contact">
+                <div class="footer-section contact-info">
+                    <h3>Contact Us</h3>
+                    <p>Email: cb.sc.u4aie23260@cb/students.amrita.edu or</p><br>
+                    <p>cb.sc.u4aie23247@cb/students.amrita.edu </p><br>
+                    <p>Phone: +91 12345 67890</p>
+                    <p>Address: Amrita University, Amritanagar, Ettimadai, Tamil Nadu 641112</p>
+                </div>
+                <div class="footer-section social">
+                    <h3>Follow Us</h3>
+                    <a href="https://www.youtube.com/channel/UCI2G9Z9FwjpjmUjd1YMkt2w"><img src="images/youtube.png" alt="Youtube"></a><br>
+                    <a href="https://x.com/SangittS"><img src="images/twitter.png" alt="Twitter"></a><br>
+                    <a href="https://www.instagram.com/visgang_03_06/"><img src="images/instalogo.png" alt="Instagram"></a><br>
+                    <a href="https://www.linkedin.com/feed/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Terratech Agro Insights. All rights reserved. Developed by : Sanggit Saaran K C S, Vishal Seshadri B</p>
+        </div>
+    </div>
+</footer>
+</html>

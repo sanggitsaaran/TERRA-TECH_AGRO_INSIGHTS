@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #021F1A;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background-image: url('images/GOODWILL.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 165px;
+}
+
+.logo {
+    margin-top: 4px;
+    margin-left: 20px;
+}
+
+.logo img {
+    border-radius: 50%;
+    height: 100px;
+    width: auto;
+    border: 2px solid greenyellow;
+}
+
+.main-heading {
+    margin-left: 8px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(52, 116, 18, 0.3);
+}
+
+.back-button {
+    margin-left: auto; 
+    margin-right: 150px; 
+    display: flex;
+    gap: 15px; 
+}
+
+.back-button button{
+    background-color: transparent;
+    font-weight: 600;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: fit-content;
+}
+
+.back-button button a {
+    color: inherit; 
+    text-decoration: none; 
+}
+  
+.back-button button:hover {
+    border : 2px solid #218838;
+    background-color: white;
+    color: black;
+}
+
+#content-wrapper {
+    max-width: 1200px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background-color: #3E603D;
+    color: white;
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 525;
+    border-radius: 15px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.question {
+    margin-bottom: 30px;
+}
+
+.options {
+    margin-top: 10px;
+    margin-left: 15px;
+    list-style: none;
+}
+
+.options li {
+    margin-bottom: 10px;
+}
+
+.submit-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.popup-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.result-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.result-buttons button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.result-buttons button:hover {
+    background-color: #45a049;
+}
+
+.blur {
+    filter: blur(5px);
+}
+
+footer {
+    background-color:#151823;
+    text-align: center;
+    color: #666873;
+  }
+  
+  .footer-container {
+    background-image: url('images/GOODWILL2.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    overflow: hidden;
+    resize: horizontal;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px; 
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff2f2;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    color: #bdecb6;
+  }
+
+  .footer-section.contact{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-section .contact-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 5px 0;
+    font-weight: 600;
+  }
+  
+  .footer-section.social {
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.footer-section.social h3 {
+    flex-basis: 100%; 
+    text-align: center; 
+}
+
+.footer-section.social a {
+    display: flex;
+    align-items: center;
+    color: #ffffff; 
+    text-decoration: none; 
+    margin-bottom: 40px;
+}
+
+.footer-section.social a img {
+    width: 40px;
+    height: 40px;
+}
+  
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #e7e7e7;
+    font-size: 18px;
+    color: #777;
+    font-weight: 600;
+    color: #ffffff;
+}

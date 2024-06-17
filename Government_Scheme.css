@@ -1,0 +1,403 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #021F1A; 
+    font-family: Arial, sans-serif; 
+}
+
+header {
+    margin: 0;
+    background-image: url('images/GOODWILL.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    height: 165px;
+    padding: 0; 
+}
+
+header h1{
+    margin-left: 9px;
+    font-size: 28px;
+}
+
+.logo {
+    margin-top: 4px; 
+    margin-left: 20px; 
+}
+  
+.logo img {
+    border-radius: 50%; 
+    height: 100px;
+    width: auto;
+    border: 2px solid greenyellow;
+}
+
+.main-heading {
+    margin-left: 8px;
+    font-size: 30px; 
+    font-weight: 700;
+    color: #ffffff; 
+    text-shadow: 2px 2px 4px rgba(52, 116, 18, 0.3);
+}
+
+.language-slider {
+    position: absolute;
+    top: 170px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 1000; 
+}
+
+.label{
+    color:whitesmoke;
+}
+
+.toggle {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color:greenyellow;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+
+.language-slider .label {
+    font-size: 14px;
+    margin: 0 10px;
+}
+
+.nav {
+    margin-left: auto; 
+    margin-right: 20px; 
+    display: flex;
+    gap: 15px; 
+}
+  
+.nav button {
+    background-color: transparent;
+    font-weight: 600;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    height: fit-content;
+}
+  
+.nav button a {
+    color: inherit; 
+    text-decoration: none;
+}
+  
+.nav button:hover {
+    border : 2px solid #218838;
+    background-color: white;
+    color: black;
+}
+  
+.container {
+    width: auto;
+    background-color: #021F1A;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding: 20px; 
+    font-weight: 550;
+    align-items: center;
+}
+
+.scheme {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+    overflow: hidden; 
+}
+
+.scheme:hover {
+    transform: scale(1.04); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+}
+
+.scheme:nth-child(odd) {
+    background-color: #bdecb6; 
+}
+
+.scheme:nth-child(even) {
+    background-color: #b2d8b2; 
+}
+
+.scheme h2 {
+    margin: 0;
+    padding: 10px; 
+    transition: color 0.3s;
+}
+
+.scheme p {
+    margin: 10px;
+    padding: 5px; 
+    color: #1a1a1a; 
+    transition: color 0.3s; 
+}
+
+#schemes{
+    margin-top: 30px;
+}
+
+.scheme:first-child a {
+    display: inline-block; 
+    padding: 5px 10px; 
+    margin-right: 10px; 
+    color: rgba(0, 0, 0, 0.5); 
+    text-decoration: none; 
+    border-radius: 5px; 
+    transition: color 0.3s; 
+    font-weight: 580;
+  
+}
+
+.scheme:first-child a:hover {
+    color: rgba(0, 0, 0, 0.7); 
+}
+
+.news-pic {
+   
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+.news-pic h2{
+    color:greenyellow;
+}
+
+.carousel-heading {
+    font-size: 28px;
+    margin-bottom: 20px;
+    font-family: 'Georgia', serif;
+    color: #2c3e50;
+    letter-spacing: 1px;
+}
+
+.image-carousel {
+    position: relative;
+    width: 900px; 
+    height: 500px; 
+    margin: 0 auto; 
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-image {
+    position: absolute;
+    width: 60%; 
+    height: 80%; 
+    border-radius: 10px;
+    opacity: 0;
+    
+    animation: rotateCarousel 30s infinite;
+    transform-origin: center;
+}
+
+.carousel-image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.carousel-image:nth-child(2) {
+    animation-delay: 6.29s;
+}
+
+.carousel-image:nth-child(3) {
+    animation-delay: 12.29s;
+}
+
+.carousel-image:nth-child(4) {
+    animation-delay: 18.29s;
+}
+
+.carousel-image:nth-child(5) {
+    animation-delay: 24.29s;
+}
+
+@keyframes rotateCarousel {
+    0% {
+        opacity: 0;
+        transform: translateX(150%) scale(0.8);
+    }
+    10% {
+        opacity: 1;
+        transform: translateX(50%) scale(1);
+    }
+    20% {
+        opacity: 1;
+        transform: translateX(0) scale(1);
+    }
+    30% {
+        opacity: 1;
+        transform: translateX(-50%) scale(1);
+    }
+    40% {
+        opacity: 0;
+        transform: translateX(-150%) scale(0.8);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(-150%) scale(0.8);
+    }
+}
+
+#scrollUpBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: #555;
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
+  
+  #scrollUpBtn:hover {
+    background-color: #777;
+  }
+
+footer {
+    background-color:#151823;
+    text-align: center;
+    color: #666873;
+  }
+  
+  .footer-container {
+    background-image: url('images/GOODWILL2.png');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 20px 0;
+    overflow: hidden;
+    resize: horizontal;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .footer-section {
+    flex: 1;
+    min-width: 200px; 
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff2f2;
+  }
+  
+  .footer-section p {
+    font-size: 14px;
+    color: #bdecb6;
+  }
+
+  .footer-section.contact{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .footer-section .contact-info {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 5px 0;
+    font-weight: 600;
+  }
+  
+  .footer-section.social {
+    margin-top: 20px;
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    flex-wrap: wrap; 
+}
+
+.footer-section.social h3 {
+    flex-basis: 100%; 
+    text-align: center; 
+}
+
+.footer-section.social a {
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    text-decoration: none; 
+    margin-bottom: 40px;
+}
+
+.footer-section.social a img {
+    width: 40px;
+    height: 40px;
+}
+  
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #e7e7e7;
+    font-size: 18px;
+    color: #777;
+    font-weight: 600;
+    color: #ffffff;
+}

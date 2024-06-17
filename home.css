@@ -1,0 +1,433 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #021F1A; 
+  font-family: Arial, sans-serif; 
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background-image: url('images/GOODWILL.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  height: 165px;
+}
+
+.user-info {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: greenyellow;
+  margin-right: 7px;
+  font-weight: 600;
+}
+
+.user-info img {
+  width: 35px;
+  height: 35px;
+  margin-left: 10px;
+  border-radius: 40px;
+}
+
+.logo {
+  margin-top: 4px; 
+  margin-left: 20px; 
+}
+
+.logo img {
+  border-radius: 50%; 
+  height: 100px;
+  width: auto;
+  border: 2px solid greenyellow;
+}
+
+.main-heading {
+  margin-left: 8px;
+  font-size: 30px; 
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(52, 116, 18, 0.3);
+}
+
+.nav {
+  margin-left: auto; 
+  margin-right: 20px; 
+  display: flex;
+  gap: 15px; 
+}
+
+.nav button {
+  background-color: transparent;
+  font-weight: 600;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  height: fit-content;
+}
+
+.nav button a {
+  color: inherit; 
+  text-decoration: none; 
+}
+
+.nav button:hover {
+  border : 2px solid #218838;
+  background-color: white;
+  color: black;
+}
+
+.carousel-container{
+  margin: 10px 0px;
+  border-radius: px;
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.contentHo{
+  display: flex;
+  max-width: auto;
+  margin: 15px;
+  background-color: #3E603D;
+  padding: 20px;
+  border-radius: 15px;
+  color: white;
+  flex-direction: column;
+  font-weight: 600;
+  text-align: justify;
+}
+
+.contentHo h2{
+  text-align: center;
+}
+
+.contentG,
+.contentH,
+.contentR,
+.contentS {
+  flex: 1;
+  max-width: 400px;
+  margin: 15px;
+  background-color: #3E603D;
+  padding: 20px;
+  border-radius: 15px;
+  color:white;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1px;
+  font-weight: 500;
+  text-align: justify;
+}
+
+.content-imageG,
+.content-imageH,
+.content-imageR,
+.content-imageS {
+  margin-top: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.content-imageG img,
+.content-imageH img,
+.content-imageR img,
+.content-imageS img {
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+  border-radius: 15px;
+}
+
+.row h2{
+  text-align: center;
+}
+
+.hero {
+  background-image: url("Hills BG.png");
+  background-size: cover; 
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 40px 0px;
+  margin-top: 30px;
+}
+
+.hero h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.hero .cta-btn {
+  border: 3px solid white;
+  background-color: transparent;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.hero .cta-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+
+.section {
+  background-image: url('images/HEROBG.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  padding: 50px 0px;
+  margin: 25px auto 25px auto;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+  color: #ffffff;
+}
+
+#crops, #signup{
+  background-image: url('images/HEROBGINV.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.section {
+  margin: 30px;
+}
+
+.section:hover{
+  transform: scale(1.04);
+  transition: transform 0.3s ease;
+  color: #BAC67A;
+}
+
+.section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section p {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  font-weight: 550;
+}
+
+.quiz-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 15px 30px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  z-index: 999; 
+}
+
+.quiz-btn:hover {
+  background-color: #45a049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#scrollUpBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #555;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#scrollUpBtn:hover {
+  background-color: #777;
+}
+
+footer {
+  background-color:#151823;
+  padding: 20px 0;
+  text-align: center;
+  color: #666873;
+}
+
+.footer-container {
+  background-image: url('images/GOODWILL2.png');
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 20px 0;
+  overflow: hidden;
+  resize: horizontal;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px; 
+}
+
+.footer-section h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #fff2f2;
+}
+
+.footer-section p {
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.footer-section.feedback form {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-section.feedback textarea,
+.footer-section.feedback input {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer-section.feedback button {
+  padding: 10px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-section.feedback button:hover {
+  background-color: #218838;
+}
+
+.footer-section.contact p {
+  margin: 5px 0;
+}
+
+.footer-section.social {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  flex-wrap: wrap; 
+}
+
+.footer-section.social h3 {
+  flex-basis: 100%; 
+  margin-bottom: 10px; 
+  text-align: center; 
+}
+
+.footer-section.social a {
+  display: flex;
+  align-items: center;
+  color: #ffffff; 
+  text-decoration: none; 
+}
+
+.footer-section.social a img {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #e7e7e7;
+  font-size: 14px;
+  color: #777;
+  font-weight: 600;
+  color: #ffffff;
+}

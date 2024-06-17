@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Terratech Agro Insights</title>
+  <link rel="stylesheet" href="home.css">
+  <link rel="icon" href="images/Designer.png">
+</head>
+<body>
+  <header>
+    <div class="user-info">
+      <span>Welcome, <span id="username"></span></span>
+      <img src="images/user-image.jpg" alt="User Icon">
+    </div>
+    <div class="logo">
+      <img src="images/Designer.png" alt="Tamil Nadu Farm Heritage Logo">
+    </div>
+    <div class="main-heading">
+      Terratech Agro Insights
+    </div>
+    <div class="nav">
+      <button><a href="home.html">Home</a></button>
+      <button><a href="Government_Scheme.html">Government Scheme</a></button>
+      <button><a href="History.html">History</a></button>
+      <button><a href="Region.html">Region</a></button>
+      <button><a href="Signup.html">Sign-Up</a></button>
+    </div>
+  </header>
+
+  <div class="carousel-container">
+    <div class="carousel">
+      <img src="images/ag1.png" alt="img1">
+      <img src="images/ag3.jpeg" alt="img3">
+      <img src="images/ag4.jpeg" alt="img4">
+      <img src="images/ag5.png" alt="img4">
+    </div >
+    <button class="prev">&lt;</button>
+    <button class="next">&gt;</button>
+  </div>
+
+  <br>
+  <br>
+    
+    <div class="contentHo">
+      <h2>About Terratech</h2>
+      <p>Introduction to Teratech: Teratech is a comprehensive platform dedicated to advancing agriculture in Tamil Nadu, leveraging technology and innovation to empower farmers and stakeholders across the agricultural value chain.</p>  
+      <p>Mission Statement: Our mission at Teratech is to revolutionize the agricultural landscape of Tamil Nadu by providing cutting-edge solutions, knowledge sharing, and collaborative platforms aimed at sustainable growth and prosperity.</p> 
+      <p>Focus on Tamil Nadu Agriculture: Teratech focuses specifically on the unique agricultural challenges and opportunities present in Tamil Nadu, tailoring its solutions and services to address the region's specific needs.</p>
+      <p>Empowering Farmers: Through Teratech, farmers gain access to vital information, resources, and technologies that enhance productivity, optimize resource utilization, and improve livelihoods, thus fostering a thriving agricultural community.</p>
+      <p>Commitment to Innovation: Teratech is committed to continuous innovation, research, and development, striving to introduce groundbreaking technologies, practices, and methodologies that propel Tamil Nadu's agriculture into a more sustainable and resilient future.</p> 
+    </div>
+  
+    <br>
+  
+    <div class="row">
+      <div class="contentG">
+        <h2>Diverse Crop Cultivation</h2>
+        <p>Tamil Nadu boasts a diverse range of crops due to its varied agro-climatic conditions. From paddy fields in the Cauvery Delta to horticultural crops like mangoes, bananas, and coconut in the coastal regions, the state showcases a rich agricultural landscape.</p>
+        <div class="content-imageG">
+          <img src="images/image2.jpg" alt="Government Schemes Image">
+        </div>
+      </div>
+
+    <br>
+  
+      <div class="contentH">
+        <h2>Innovative Farming Techniques</h2>
+        <p>The state has been at the forefront of adopting innovative farming techniques to improve productivity and sustainability. This includes the promotion of organic farming, precision agriculture, and the use of technology such as drip irrigation and greenhouse farming.</p>
+        <div class="content-imageH">
+          <img src="images/image3.jpg" alt="History Page Image">
+        </div>
+      </div>
+  
+    <br>
+  
+      <div class="contentR">
+        <h2>Water Management Practices</h2>
+        <p>With a significant portion of its agricultural land being rain-fed, Tamil Nadu has developed robust water management practices. This includes the construction of check dams, farm ponds, and the implementation of efficient water distribution systems like the 'Kudimaramathu' scheme to enhance water conservation and irrigation efficiency.</p>
+        <div class="content-imageR">
+          <img src="images/image4.jpg" alt="Region Page Image">
+        </div>
+      </div>
+
+    <br>
+  
+      <div class="contentS">
+        <h2>Role of Farmer Cooperatives</h2>
+        <p>Farmer cooperatives play a crucial role in the agricultural sector of Tamil Nadu, empowering small-scale farmers and promoting collective decision-making. These cooperatives facilitate access to credit, inputs, and markets, thereby improving the socio-economic conditions of rural farming communities.</p>
+        <div class="content-imageS">
+          <img src="images/image1.jpg" alt="Sign-Up Page Image">
+        </div>
+      </div>
+    </div>
+  
+  <section class="hero"data-section>
+    <div class="container">
+      <h1>Welcome to Tamil Nadu Farm Heritage</h1>
+      <p>Explore the agricultural diversity of Tamil Nadu and discover its rich cultural heritage.</p>
+      <input type="button" class="cta-btn" value="Explore now" onclick="ExpNow()">
+    </div>
+  </section>
+
+  <section class="hide">
+    <section id="Government Schemes" class="section">
+      <div class="container">
+        <h2>Government Schemes</h2>
+        <p>This page will explain the measures taken by the Government of Tamil Nadu for the betterment of Agriculture.</p>
+      </div>
+    </section>
+
+    <section id="crops" class="section">
+      <div class="container">
+        <h2>Region Page</h2>
+        <p>The Region page showcases the different regions where our organization operates and the unique features of each region.</p>
+          </div>
+    </section>
+
+    <section id="history" class="section">
+      <div class="container">
+        <h2>History Page</h2>
+        <p>The History page provides a detailed history of our organization, including milestones and achievements.</p>
+      </div>
+    </section>
+
+    <section id="signup" class="section">
+      <div class="container">
+              <h2>Sign-Up Page</h2>
+          <p>The Sign-Up page allows users to sign up for our services and access member-exclusive content.</p>
+
+        </div>
+    </section>
+  </section>
+
+  <a href="quiz.html" class="quiz-btn">Take Quiz</a>
+  <script src="home.js" defer></script> 
+  <button id="scrollUpBtn" title="Go to top">&#11014;</button>
+</body>
+<footer>
+  <div class="footer-container">
+    <div class="footer-content">
+      <div class="footer-section feedback">
+        <h3>Feedback</h3>
+        <form id="feedback-form">
+          <textarea name="feedback" placeholder="Your Feedback" rows="4"></textarea>
+          <input type="text" name="contact" placeholder="Your Contact No.">
+          <input type="email" name="email" placeholder="Your Email">
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="footer-section contact">
+        <h3>Contact Us</h3>
+        <p>Email: cb.sc.u4aie23260@cb/students.amrita.edu or</p>
+        <p>cb.sc.u4aie23247@cb/students.amrita.edu </p>
+        <p>Phone: +91 12345 67890</p>
+        <p>Address: Amrita University, Amritanagar, Ettimadai, Tamil Nadu 641112</p>
+        <div class="footer-section social">
+          <h3>Follow Us</h3>
+          <a href="https://www.youtube.com/channel/UCI2G9Z9FwjpjmUjd1YMkt2w"><img src="images/youtube.png" alt="Youtube"></a><br>
+          <a href="https://x.com/SangittS"><img src="images/twitter.png" alt="Twitter"></a><br>
+          <a href="https://www.instagram.com/visgang_03_06/"><img src="images/instalogo.png" alt="Instagram"></a><br>
+          <a href="https://www.linkedin.com/feed/"><img src="images/linkedin.png" alt="LinkedIn"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Terratech Agro Insights. All rights reserved. Developed by : Sanggit Saaran K C S, Vishal Seshadri B</p>
+    </div>
+  </div>
+</footer>
+
+</html>
